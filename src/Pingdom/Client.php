@@ -93,7 +93,7 @@ class Client
 	 */
 	public function getProbes()
 	{
-		$client = new \Guzzle\Service\Client('https://api.pingdom.com/api/2.0');
+		$client = new \Guzzle\Service\Client('https://api.pingdom.com/api/3.1');
 
 		/** @var $request \Guzzle\Http\Message\Request */
 		$request = $client->get('probes', array('App-Key' => $this->token));
